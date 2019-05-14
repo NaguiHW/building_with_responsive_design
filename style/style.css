@@ -52,28 +52,95 @@ body{
     grid-column: 1/9;
     grid-row: 3/5;
     position: relative;
-    background-size: cover;
+    margin-right: 5px;
 }
+
+.article-1 span{
+    position: absolute;
+    bottom: 20px;
+    left: 16px;
+}
+
 .article-1 h4{
-    position: absolute;
-    top: 8px;
-    left: 16px;
     color: white;
+    font-size: 20px;
 }
+
 .article-1 h2{
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
     color: white;
+    font-size: 45px;
 }
+
 .article-1 img{
     width:100%;
     height: 400px;
+    object-fit: cover;
 }
+
 .article-2{
     grid-column: 9/13;
+    position: relative;
+    margin-left: 5px;
+}
+
+.article-2 img,
+.article-3 img{
+    width:100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.article-2 span,
+.article-3 span{
+    position: absolute;
+    bottom: 20px;
+    left: 16px;
+}
+
+.article-2 h4,
+.article-3 h4,
+.article-2 h2,
+.article-3 h2{
+    color: white;
 }
 
 .article-3{
     grid-column: 9/13;
+    position: relative;
+    margin-left: 5px;
+}
+
+@media only screen and (max-width: 1024px){
+    .article-1 h2 {
+        font-size: 35px;
+    }
+
+    .article-2 h2,
+    .article-3 h2 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .menu-1 {
+        display: none;
+    }
+
+    .top-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article-1,
+    .article-2,
+    .article-3 {
+        margin: 5px;
+        height: 250px;
+    }
+
+    .article-1 img,
+    .article-2 img,
+    .article-3 img{
+        height: 250px;
+    }
 }
