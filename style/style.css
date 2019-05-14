@@ -140,6 +140,12 @@ body{
     cursor: pointer;
 }
 
+.news-article p:hover{
+    color: orangered;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .news-article img{
     width: 100%;
     height: auto;
@@ -154,6 +160,33 @@ body{
 
 .news-article h5:hover {
     color: rgb(77, 77, 77);
+}
+
+/* FUNDING COINTAINER */
+.funding-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    max-width: 1200px;
+    margin: 70px auto;
+    grid-auto-rows: auto;
+    height: auto;
+    padding: 0 15px;
+}
+
+.funding-header{
+    display: flex;
+    justify-content: space-between;
+    grid-area: 1 / 1 / 2 / 5;
+}
+
+.funding-box{
+    padding: 12px;
+}
+
+.funding-container h5:nth-of-type(1){
+    background-color: #f54121;
+    padding: 20px 20px 20px 80px;
 }
 
 /* MEDIA QUERIES */
