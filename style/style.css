@@ -188,8 +188,10 @@ body{
 
 .funding-header div p {
     color: orangered;
-    font-size: 30px;
+    font-size: 27px;
     font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    letter-spacing: -0.5px;
 }
 
 .funding-header div p:hover,
@@ -286,6 +288,24 @@ body{
     .container-title {
         grid-area: 1 / 1 / 2 / 4;
     }
+
+    .funding-header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .funding-header div span:nth-of-type(1){
+        margin-left: 0;
+    }
+
+    .funding-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .funding-box:nth-of-type(4){
+        display: none;
+    }
+    
 }
 
 @media only screen and (max-width: 768px){
@@ -326,5 +346,26 @@ body{
         object-fit: cover;
         float: left;
         margin-right: 10px;
+    }
+
+    .funding-header div:nth-of-type(2){
+        display: flex;
+        flex-direction: column;
+    }
+
+    .funding-header div span{
+        margin: 0;
+        padding: 5px 0;
+        font-size: 14px;
+    }
+
+    .funding-container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    
+    .funding-box{
+        padding: 0;
     }
 }
