@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+}
+
+.top-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, auto);
+}
+
+.menu-1{
+    display: flex;
+    grid-area: 1 / 1 / 2 / 13;
+    background-color: black;
+    height: 30px;
+    align-items: center;
+}
+
+.menu-1 a {
+    color: gray;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.menu-1 a:hover {
+    color: white;
+}
+
+.menu-2{
+    display: flex;
+    grid-area: 2 / 1 / 3 / 13;
+    background-color: white;
+    height: 45px;
+    align-items: center;
+}
+
+.menu-2 a {
+    color: gray;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.menu-2 a:hover {
+    color: black;
+}
