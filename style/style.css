@@ -326,6 +326,7 @@ body{
 .topic-info {
     background-color: #FFF4F2;
     display: flex;
+    justify-content: space-between;
 }
 
 .topic-info div {
@@ -379,6 +380,12 @@ body{
     color: black;
 }
 
+/* FOOTER */
+.top-footer{
+    margin: 0 auto;
+    background-color: #131313;
+}
+
 
 /* MEDIA QUERIES */
 
@@ -417,6 +424,10 @@ body{
         display: none;
     }
     
+    .topic-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
 
 @media only screen and (max-width: 768px){
@@ -478,5 +489,10 @@ body{
     
     .funding-box{
         padding: 0;
+    }
+
+    .topic-container{
+        display: flex;
+        flex-direction: column;
     }
 }
