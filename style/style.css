@@ -72,7 +72,7 @@ body{
     position: relative;
 }
 
-.article-1 span{
+.article-1 div{
     bottom: 20px;
     left: 16px;
     position: absolute;
@@ -108,8 +108,8 @@ body{
     width:100%;
 }
 
-.article-2 span,
-.article-3 span{
+.article-2 div,
+.article-3 div{
     bottom: 20px;
     left: 16px;
     position: absolute;
@@ -304,30 +304,30 @@ body{
     position: relative;
 }
 
-.topic-image span{
+.topic-image div{
     bottom: 20px;
     color: white;
     left: 16px;
     position: absolute;
 }
 
-.topic-image span p{
+.topic-image div p{
     font-size: 20px;
     font-weight: bold;
     padding-bottom: 5px;
     padding-right: 5px;
 }
 
-.topic-image span p:hover {
+.topic-image div p:hover {
     text-decoration: underline;
 }
 
-.topic-image span h5 {
+.topic-image div h5 {
     color: rgb(180, 180, 180);
     font-weight: lighter;
 }
 
-.topic-image span h5:hover{
+.topic-image div h5:hover{
     color: white;
 }
 
@@ -451,7 +451,7 @@ body{
     font-size: 12px;
     font-weight: lighter;
 }
-.bottom-footer p span{
+.bottom-footer div p span{
     color: red;
 }
 
